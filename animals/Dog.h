@@ -7,7 +7,7 @@
 #include <string>
 
 // Derived publicly inheriting from Base
-class Dog:Animal {
+class Dog : Animal {
     private:
         std::string breed;
         bool isTrained;
@@ -46,11 +46,11 @@ class Dog:Animal {
         std::cout << getName() << " happily eats " << food << "." << std::endl;
     }
 
-    virtual void awaken() {
+    virtual void awaken() override {
         std::cout << getName() << " is wide awake and wagging its tail." << std::endl;
     }
 
-    virtual void sleep() {
+    virtual void sleep() override {
         std::cout << getName() << " is sleeping on its bed." << std::endl;
     }
 
