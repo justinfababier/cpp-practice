@@ -14,7 +14,7 @@ class Animal {  // Animals class
 
     public:     // Public members can be accessed outside the class
         // Constructor to initalize the animal's properties
-        Animal(const std::string &name_, int age_, double weight_):
+        Animal(const std::string& name_, int age_, double weight_):
             name(name_),
             age(age_),
             weight(weight_),
@@ -39,7 +39,7 @@ class Animal {  // Animals class
     }
 
     // Setters
-    void setName(const std::string &name_) {
+    void setName(const std::string& name_) {
         name = name_;   // Set name of animal
     }
 
@@ -60,7 +60,7 @@ class Animal {  // Animals class
         std::cout << "Animal makes a sound." << std::endl;
     }
 
-    virtual void eat(const std::string &food) {
+    virtual void eat(const std::string& food) {
         std::cout << name << " eats " << food << "." << std::endl;
     }
 

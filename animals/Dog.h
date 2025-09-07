@@ -13,7 +13,7 @@ class Dog : Animal {
         bool isTrained;
 
     public:     // Public members can be accessed outside the class
-        Dog(const std::string &name_, int age_, double weight_, const std::string &breed_, bool isTrained_):
+        Dog(const std::string& name_, int age_, double weight_, const std::string& breed_, bool isTrained_):
             Animal(name_, weight_, age_),
             breed(breed_),
             isTrained(isTrained)
@@ -42,7 +42,7 @@ class Dog : Animal {
         std::cout << getName() << " barks: 'Woof! Woof!'" << std::endl;
     }
 
-    void eat(const std::string &food) override {
+    void eat(const std::string& food) override {
         std::cout << getName() << " happily eats " << food << "." << std::endl;
     }
 
@@ -55,7 +55,7 @@ class Dog : Animal {
     }
 
     // Dog-specific behavior
-    void fetch(const std::string &item) {
+    void fetch(const std::string& item) {
         std::cout << getName() << " fetches the " << item << "." << std::endl;
     }
 };
